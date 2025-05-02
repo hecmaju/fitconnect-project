@@ -1,0 +1,969 @@
+/* Reset básico */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Header */
+.main-header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+.header-content .logo a {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-content .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-content .logo span {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Media query para pantallas más pequeñas (ajusta si es necesario) */
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .header-content .logo span {
+        font-size: 1em;
+    }
+
+    .header-content .logo img {
+        height: 40px;
+        margin-right: 5px;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .login-button {
+        margin-left: 0;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .login-dropdown {
+        top: auto;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
+
+    .social-links {
+        margin-left: 0;
+    }
+    .social-links a {
+        margin-left: 5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin: 0.25rem 0;
+    }
+
+    .hero,
+    .features {
+        padding: 3rem 10px;
+    }
+}
+
+/* Navegación */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    padding: 0.5rem 0;
+    display: block; 
+}
+.login-item {
+    position: relative;
+}
+/* Estilos para el nombre de usuario logueado */
+.main-nav ul li.logged-in-user {
+    color: white; /* Asegura que el texto sea blanco para que se vea en el fondo oscuro de la navegación */
+    font-weight: bold; /* Puedes mantenerlo en negrita para destacar */
+    font-size: 18px; /* Igual que los otros enlaces para mantener la consistencia */
+    padding: 0.5rem 1rem; /* Misma altura que los otros enlaces */
+    display: flex; /* Para alinear verticalmente si es necesario */
+    align-items: center; /* Centra verticalmente el texto */
+}
+
+/* Estilos para el enlace de cerrar sesión */
+.main-nav ul li.logout-item a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-weight: bold; /* Mantener en negrita */
+    transition: color 0.3s ease;
+    font-size: 18px; /* Consistente con otros enlaces */
+    padding: 0.5rem 0; /* Misma altura */
+    display: block; /* Para que ocupe todo el ancho del li */
+}
+
+.main-nav ul li.logout-item a:hover {
+    background-color: #395B64; /* Mismo efecto hover que otros enlaces */
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+/* Estilos para el botón de cerrar sesión */
+.main-nav ul li.logout-item a.logout-button {
+    background-color: #d9534f; /* Un color rojo/naranja para destacar el cierre de sesión */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.main-nav ul li.logout-item a.logout-button:hover {
+    background-color: #c9302c;
+}
+
+/* Ajuste del margen entre el nombre y el botón de cerrar sesión */
+.main-nav ul li.logged-in-user + .logout-item {
+    margin-left: 10px; /* Añade un espacio entre el nombre y el botón */
+}
+/* Ajuste para la lista de navegación para alinear los elementos a la derecha */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+/* Asegurar que el último elemento (login o usuario/logout) esté a la derecha */
+.main-nav ul {
+    justify-content: flex-end; /* Empuja los elementos al final (derecha) */
+}
+
+/* Excepto el primer elemento (Página principal) si quieres que esté a la izquierda */
+.main-nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto; /* Empuja el primer elemento a la izquierda */
+}
+
+/* Si no quieres el primer elemento a la izquierda, simplemente ajusta el margen del login/usuario */
+.main-nav ul li.login-item,
+.main-nav ul li.logged-in-user,
+.main-nav ul li.logout-item {
+    margin-left: 20px; /* Espacio entre los elementos de la derecha */
+}
+/* Estilos para el menú de usuario */
+.main-nav ul li.user-menu {
+    position: relative;
+    margin-left: 20px;
+}
+
+#user-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none; /* Para quitar el borde al enfocar */
+}
+
+#user-button:hover {
+    background-color: #395B64;
+    border-radius: 6px;
+}
+
+#user-button::after {
+    content: '\25BE'; /* Carácter Unicode para una flecha hacia abajo */
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* ¡Crucial! Oculta el menú por defecto */
+    z-index: 102;
+    min-width: 120px;
+}
+
+.user-dropdown.show {
+    display: block; /* Muestra el menú cuando esta clase está presente */
+}
+
+.user-dropdown li a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.user-dropdown li a:hover {
+    background-color: #395B64;
+}
+
+/* Mostrar el dropdown al hacer hover en el botón */
+/*.user-menu:hover .user-dropdown {
+    display: block;
+}
+*/
+/* Ajuste para alinear el menú de usuario a la derecha */
+.main-nav ul {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-nav ul li:first-child {
+    margin-right: auto;
+}
+
+.main-nav ul li.login-item {
+    margin-left: 20px; /* Mantener espacio si no está logueado */
+}
+
+
+/* Desplegable de inicio de sesión */
+.login-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    z-index: 101;
+    display: none;
+}
+
+.login-dropdown h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.login-dropdown label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.login-dropdown input[type="text"],
+.login-dropdown input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.login-dropdown button[type="submit"] {
+    background-color: #395B64;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 19px;
+    width: 100%;
+}
+
+.login-dropdown button[type="submit"]:hover {
+    background-color: #395B64;
+}
+
+.login-dropdown .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.register-link {
+    color: #fff;
+    
+  }
+  .login-dropdown .register-link {
+    font-size: 16px;
+    text-align: center; 
+  }
+
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #395B64;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    
+  }
+
+/* Enlaces sociales */
+.social-links {
+    display: flex;
+    margin-left: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+.social-links img {
+    height: 25px;
+}
+.main-nav ul li a.login-link {
+    
+    background-color: #395B64;
+    color: whitesmoke; 
+    padding: 0.5rem 1rem; 
+    border-radius: 6px; 
+}
+
+.main-nav ul li a.login-link:hover {
+    background-color: #e9ecef;
+    color: #395B64;; 
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 5rem 20px;
+    text-align: center;
+    background-color: #395B64;
+    color: whitesmoke; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+/* Features Section */
+.features {
+    padding: 3rem 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom:  auto;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #395B64;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+}
+
+.button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+}
+
+.secondary-button:hover {
+    background-color: #545b62;
+}
+
+/* Back to top button */
+.back-to-top {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.10rem 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: auto; 
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+
+/* Tabla de horarios */
+
+/* Estilos generales para las tablas */
+.schedule-table, .activities-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* Encabezados de tabla */
+.schedule-table thead th, .activities-table thead th {
+    background-color: #395B64;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #395B64;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* Celdas de datos */
+.schedule-table td, .activities-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #555;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Estilo para la columna de "días" o nombres de actividad */
+.time-slot, .activity-name {
+    font-weight: bold;
+    background-color: #e9ecef;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Estilo para las filas alternas */
+.schedule-table tbody tr:nth-child(even), .activities-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Contenedor para hacer la tabla responsive */
+.table-container {
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+/* Caption de la tabla */
+.schedule-table caption, .activities-table caption {
+    caption-side: top;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilos para el main content para que ocupe el espacio restante */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Estilos para la sección del formulario */
+
+.form-section {
+    padding: 2rem 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-section h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-section fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-section legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section input[type="date"],
+.form-section input[type="file"],
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-section textarea {
+    resize: vertical;
+}
+
+.form-section .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.form-section .radio-group label {
+    font-weight: normal;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.form-section .radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-section .checkbox-group {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section .checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    align-items: center;
+}
+
+.form-section .checkbox-group input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.form-section .checkbox-novedades {
+    margin-top: 10px;
+}
+
+.form-section .checkbox-novedades label {
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.form-section .checkbox-novedades input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-section .form-buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-section .form-buttons button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.form-section .form-buttons button[type="reset"] {
+    background-color: #6c757d;
+}
+
+.form-section .form-buttons button:hover {
+    background-color: #395B64;
+}
+
+.form-section .form-buttons button[type="reset"]:hover {
+    background-color: #545b62;
+}
+
+
+
+
+/* Estilos específicos para la página del blog */
+.blog-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Contenido principal más barra lateral */
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.blog-header {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-header .lead {
+    font-size: 1.1em;
+    color: #777;
+    line-height: 1.6;
+}
+
+.blog-content {
+    grid-column: 1;
+}
+
+.blog-post {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.blog-post h2 {
+    font-size: 2em;
+    color: #395B64;
+    margin-bottom: 10px;
+}
+
+.blog-post .post-meta {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.blog-post p {
+    color: blacksmoke;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.blog-post cite {
+    font-style: italic;
+    color: #395B64;
+}
+
+.sidebar {
+    grid-column: 2;
+    padding-left: 30px;
+}
+
+.widget {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.widget h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.widget ul li:last-child {
+    border-bottom: none;
+}
+
+.widget ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.widget ul li a:hover {
+    color: #395B64;
+}
+
+.widget .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.widget .social-links img {
+    height: 25px;
+    width: auto;
+}
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+    .blog-page {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .blog-header {
+        margin-bottom: 30px;
+    }
+
+    .sidebar {
+        padding-left: 0;
+    }
+}
+
+
+/* Asegurando que los videos tengan el mismo ancho dentro del contexto del blog */
+.blog-post .video-container {
+    width: 100%; 
+    max-width: 700px; 
+    margin: 1.5rem auto;
+}
+
+.blog-post .video-container video {
+    display: block; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

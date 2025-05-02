@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Fitness y Consejos de Salud - FitConnect</title>
+    <link rel="shortcut icon" href="/imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="blog.css"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="nutricion.html">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>  
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <h1 class="hero-title">Blog de Fitness y Consejos de Salud</h1>
+            <p class="hero-subtitle">Mantente al día con las últimas tendencias, investigaciones y consejos prácticos para alcanzar tus objetivos de bienestar.</p>
+            
+        </section>
+     
+        <div class="blog-content">
+            <article class="blog-post">
+                <h2>El Impacto Real del Ejercicio Regular en tu Salud</h2>
+                <p class="post-meta">Publicado el 20 de abril de 2025 por el Equipo de FitConnect</p>
+                <img src="imatges/blog1.png" alt="Persona haciendo ejercicio">
+                <p>El ejercicio regular es mucho más que una forma de mantenernos en forma; es un pilar fundamental para una salud óptima. Datos de la Organización Mundial de la Salud (OMS) indican que la inactividad física es el cuarto factor de riesgo principal de mortalidad mundial, contribuyendo al 6% de las muertes a nivel global.</p>
+                <p>Estudios han demostrado consistentemente que la actividad física regular puede reducir significativamente el riesgo de enfermedades cardiovasculares, la principal causa de muerte en el mundo. Un metaanálisis publicado en el <cite>Journal of the American College of Cardiology</cite> encontró que incluso 150 minutos de actividad física de intensidad moderada a la semana pueden reducir el riesgo de enfermedad coronaria en un 14%.</p>
+                <p>Además de la salud cardiovascular, el ejercicio juega un papel crucial en la prevención y el manejo de la diabetes tipo 2. La actividad física mejora la sensibilidad a la insulina y ayuda a regular los niveles de glucosa en sangre. Investigaciones del <cite>National Institutes of Health</cite> (NIH) sugieren que el ejercicio regular puede ser tan efectivo como algunos medicamentos para controlar la glucemia en personas con diabetes tipo 2.</p>
+                <p>El bienestar mental es otro ámbito donde el ejercicio tiene un impacto significativo. La actividad física libera endorfinas, neurotransmisores que tienen efectos analgésicos y generan una sensación de bienestar. Un estudio publicado en el <cite>British Journal of Sports Medicine</cite> reveló que el ejercicio regular puede reducir los síntomas de depresión y ansiedad de manera similar a la terapia o la medicación en algunos casos.</p>
+                <p>Finalmente, el ejercicio contribuye a la salud ósea y muscular, ayudando a prevenir la osteoporosis y la sarcopenia (pérdida de masa muscular relacionada con la edad). Actividades de carga, como caminar, correr o levantar pesas, estimulan la formación de hueso y fortalecen los músculos, mejorando la movilidad y reduciendo el riesgo de caídas en la edad adulta.</p>
+                <p>Incorporar al menos 30 minutos de actividad física de intensidad moderada la mayoría de los días de la semana puede marcar una diferencia sustancial en tu salud a largo plazo. ¡En FitConnect, te ofrecemos las herramientas y la motivación para que el ejercicio se convierta en una parte integral de tu vida!</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>Nutrición Inteligente: Desmitificando las Dietas de Moda</h2>
+                <p class="post-meta">Publicado el 15 de abril de 2025 por la Nutricionista de FitConnect, Ana Pérez</p>
+                <img src="imatges/blog-nutri.png" alt="Variedad de alimentos saludables">
+                <p>El mundo de la nutrición está constantemente inundado de nuevas dietas que prometen resultados rápidos y milagrosos. Sin embargo, es crucial abordar estas tendencias con un ojo crítico y basar nuestras elecciones en la ciencia y la evidencia.</p>
+                <p>Muchas dietas de moda, como las dietas extremadamente bajas en carbohidratos o las dietas restrictivas que eliminan grupos enteros de alimentos, pueden ser difíciles de mantener a largo plazo y, en algunos casos, pueden ser perjudiciales para la salud. Datos de la <cite>Academy of Nutrition and Dietetics</cite> enfatizan la importancia de una alimentación equilibrada y variada que proporcione todos los nutrientes esenciales.</p>
+                <p>Un metaanálisis publicado en el <cite>American Journal of Clinical Nutrition</cite> no encontró evidencia sólida que respalde la superioridad a largo plazo de una dieta de moda específica sobre otras estrategias de pérdida de peso basadas en la restricción calórica y el aumento de la actividad física.</p>
+                <p>En lugar de buscar soluciones rápidas, la clave para una nutrición inteligente radica en comprender los principios básicos de una alimentación saludable. Esto incluye consumir una variedad de frutas y verduras, elegir granos integrales en lugar de refinados, incluir fuentes de proteína magra (como pescado, pollo, legumbres y tofu), optar por grasas saludables (como las que se encuentran en el aguacate, los frutos secos y el aceite de oliva) y limitar el consumo de azúcares añadidos, grasas saturadas y alimentos ultraprocesados.</p>
+                <p>La hidratación también es fundamental. El agua juega un papel crucial en numerosas funciones corporales, desde la regulación de la temperatura hasta el transporte de nutrientes. La <cite>European Food Safety Authority</cite> (EFSA) recomienda una ingesta diaria de agua de alrededor de 2 litros para las mujeres y 2.5 litros para los hombres, aunque estas necesidades pueden variar según la actividad física y las condiciones ambientales.</p>
+                <p>En FitConnect, promovemos un enfoque de nutrición sostenible y basado en la evidencia. Nuestros planes de nutrición personalizados están diseñados para satisfacer tus necesidades individuales y ayudarte a construir hábitos alimenticios saludables a largo plazo. ¡Recuerda que la clave no está en la restricción, sino en el equilibrio y la moderación!</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>Entrenamiento de Fuerza para Principiantes: Rompiendo los Mitos</h2>
+                <p class="post-meta">Publicado el 10 de abril de 2025 por el Entrenador Personal de FitConnect, Carlos López</p>
+                <img src="imatges/blog-fuerza.png" alt="Persona levantando pesas en un gimnasio">
+                <p>El entrenamiento de fuerza a menudo está rodeado de mitos, especialmente para aquellos que recién comienzan su viaje en el mundo del fitness. Contrariamente a la creencia popular, levantar pesas no te convertirá automáticamente en un culturista de la noche a la mañana. De hecho, el entrenamiento de fuerza ofrece una amplia gama de beneficios para personas de todas las edades y niveles de condición física.</p>
+                <p>Datos de la <cite>American College of Sports Medicine</cite> (ACSM) respaldan la importancia del entrenamiento de fuerza para mejorar la fuerza y la resistencia muscular, aumentar la densidad ósea, quemar calorías de manera más eficiente y mejorar la función física general.</p>
+                <p>Un estudio publicado en la revista <cite>Medicine & Science in Sports & Exercise</cite> demostró que el entrenamiento de fuerza regular puede ayudar a prevenir y controlar enfermedades crónicas como la osteoporosis, la diabetes tipo 2 y las enfermedades cardíacas.</p>
+                <p>Para los principiantes, es fundamental comenzar con un enfoque seguro y progresivo. Esto implica aprender la técnica correcta de los ejercicios, comenzar con pesos ligeros y aumentar gradualmente la intensidad a medida que la fuerza mejora. Un entrenador personal certificado puede ser de gran ayuda para guiarte en este proceso y diseñar un programa de entrenamiento adecuado a tus objetivos y capacidades.</p>
+                <p>Algunos ejercicios fundamentales para principiantes incluyen sentadillas, flexiones, remo con barra o mancuernas, press de banca y press de hombros. Es importante trabajar todos los grupos musculares principales y permitir suficiente tiempo de descanso entre las sesiones de entrenamiento para permitir la recuperación muscular.</p>
+                <p>En FitConnect, nuestros entrenadores personales están capacitados para trabajar con personas de todos los niveles, desde principiantes hasta atletas avanzados. Te proporcionaremos la orientación y el apoyo que necesitas para comenzar tu viaje de entrenamiento de fuerza de manera segura y efectiva. ¡Rompe los mitos y descubre los increíbles beneficios de un cuerpo más fuerte y funcional!</p>
+            </article>
+        </div>
+        
+
+       
+    </main>
+    <div class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </div>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

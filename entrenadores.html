@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrenadores Personales - FitConnect</title>
+    <link rel="shortcut icon" href="/imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content" id="principio">
+            <div class="logo">
+                <a href="index.html"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nutricion.html">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <h1 class="hero-title">Conoce a Nuestros Entrenadores Personales</h1>
+            <p class="hero-subtitle">Elige al entrenador que mejor se adapte a tus objetivos y empieza hoy mismo a transformar tu vida.</p>
+            
+        </section>
+        
+
+        <section class="features">
+            <div class="card-grid">
+                <article class="card">
+                    <img src="imatges/especialita-fitness2.PNG" alt="Entrenador de Fitness">
+                    <h3>Carlos Pérez - Especialista en Fitness</h3>
+                    <p>Rutinas personalizadas para aumento de masa muscular, pérdida de grasa y mejora de la condición física general. ¡Te guiaré en cada paso!</p>
+                    <!--<a href="contacto-carlos.html" class="button">Contactar</a> -->
+                </article>
+                <article class="card">
+                    <img src="imatges/zumba-profe.png" alt="Entrenadora de Zumba">
+                    <h3>Sofía Gómez - Instructora de Zumba</h3>
+                    <p>Clases llenas de energía y ritmo para quemar calorías mientras te diviertes. ¡Únete a la fiesta del fitness!</p>
+                    <!--<a href="contacto-sofia.html" class="button">Contactar</a> -->
+                </article>
+                <article class="card">
+                    <img src="imatges/kick-boxing2.PNG" alt="Entrenador de Kick-Boxing">
+                    <h3>Javier López - Experto en Kick-Boxing</h3>
+                    <p>Entrenamientos intensos para mejorar tu fuerza, agilidad y defensa personal. ¡Desata tu poder interior!</p>
+                    <!--<a href="contacto-javier.html" class="button">Contactar</a> -->
+                </article>
+                <article class="card">
+                    <img src="imatges/crossfit2.png" alt="Entrenadora de Crossfit">
+                    <h3>Elena Ruiz - Coach de Crossfit</h3>
+                    <p>Desafía tus límites con entrenamientos funcionales y variados. ¡Prepárate para superar cualquier reto!</p>
+                    <!--<a href="contacto-elena.html" class="button">Contactar</a> -->
+                </article>
+            </div>
+        </section>
+
+        
+    </main>
+    <div class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </div>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comunidad Activa y Retos de Fitness - FitConnect</title>
+    <link rel="shortcut icon" href="/imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect">
+                    <span>FitConnect</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nutricion.html">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content community-page">
+        <section class="hero">
+            <h1 class="hero-title">Comunidad Activa y Retos de Fitness</h1>
+            <p class="hero-subtitle">¡Únete a la energía, comparte tus logros y supera nuestros emocionantes retos!</p>
+        </section>
+
+        <section class="community-section">
+            <h2>Comparte, Conecta y Motívate</h2>
+            <p>Forma parte de nuestra vibrante comunidad de entusiastas del fitness. Comparte tus progresos, interactúa con otros miembros, encuentra inspiración y apóyense mutuamente en el camino hacia una vida más saludable.</p>
+            <div class="community-features">
+                <article>
+                    <h3>Foros de Discusión</h3>
+                    <p>Participa en debates sobre entrenamiento, nutrición, bienestar y comparte tus experiencias.</p>
+                </article>
+                <article>
+                    <h3>Grupos de Apoyo</h3>
+                    <p>Conéctate con personas que tienen objetivos similares a los tuyos y motívense juntos.</p>
+                </article>
+                <article>
+                    <h3>Comparte tus Logros</h3>
+                    <p>Celebra tus éxitos, grandes o pequeños, y inspira a otros en la comunidad.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="challenges-section">
+            <h2>¡Desafía tus Límites con Nuestros Retos!</h2>
+            <p>Participa en nuestros retos de fitness diseñados para poner a prueba tu fuerza, resistencia y determinación. ¡Gana insignias virtuales y siéntete orgulloso de tus avances!</p>
+
+            <div class="challenge-list">
+                <article class="challenge-card">
+                    <h3>Reto de los 30 Días de Abdominales de Acero</h3>
+                    <p>Fortalece tu core con una rutina progresiva de ejercicios abdominales durante 30 días.</p>
+                    <ul>
+                        <li><strong>Semana 1:</strong> 3 series de 15 repeticiones de crunches básicos, elevaciones de piernas y planchas de 30 segundos.</li>
+                        <li><strong>Semana 2:</strong> Añade crunches inversos, giros rusos y aumenta la plancha a 45 segundos.</li>
+                        <li><strong>Semana 3:</strong> Incorpora bicicleta de abdominales, crunches laterales y planchas con elevación de brazo/pierna. Aumenta la plancha a 60 segundos.</li>
+                        <li><strong>Semana 4:</strong> Desafío final con todas las variaciones y series más largas.</li>
+                    </ul>
+                    
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Reto de los 5K para Principiantes</h3>
+                    <p>Prepárate para correr tu primer 5K en 8 semanas con nuestro plan de entrenamiento gradual.</p>
+                    <ul>
+                        <li><strong>Semanas 1-2:</strong> Caminar intervalos (5 minutos caminar / 2 minutos trotar) durante 20 minutos, 3 veces por semana.</li>
+                        <li><strong>Semanas 3-4:</strong> Aumentar los intervalos de trote a 5 minutos (5 minutos caminar / 5 minutos trotar) durante 25 minutos.</li>
+                        <li><strong>Semanas 5-6:</strong> Reducir el tiempo de caminata y aumentar el trote (3 minutos caminar / 7 minutos trotar) durante 30 minutos.</li>
+                        <li><strong>Semanas 7-8:</strong> Intentar correr continuamente durante 20-25 minutos y luego completar los 5K.</li>
+                    </ul>
+                    
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Reto de Fuerza Total del Cuerpo en 4 Semanas</h3>
+                    <p>Mejora tu fuerza general con una rutina de cuerpo completo para realizar 3 veces por semana.</p>
+                    <ul>
+                        <li><strong>Semana 1:</strong> 3 series de 10 repeticiones de sentadillas, flexiones, remo con mancuernas y zancadas.</li>
+                        <li><strong>Semana 2:</strong> Aumenta a 12 repeticiones y añade peso si es posible.</li>
+                        <li><strong>Semana 3:</strong> Incorpora peso muerto rumano, press de hombros y fondos en paralelas (o en silla). Reduce las repeticiones a 8-10 con más peso.</li>
+                        <li><strong>Semana 4:</strong> Intenta aumentar el peso o las series en los ejercicios.</li>
+                    </ul>
+                    
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Reto de Flexibilidad de 30 Días</h3>
+                    <p>Mejora tu rango de movimiento y reduce la rigidez con una rutina diaria de estiramientos.</p>
+                    <ul>
+                        <li><strong>Día 1-7:</strong> Estiramientos básicos como toque de dedos, estiramiento de cuádriceps, isquiotibiales, tríceps y hombros (30 segundos cada uno).</li>
+                        <li><strong>Día 8-14:</strong> Añade estiramientos de cadera, rotaciones de tronco y estiramientos de espalda (45 segundos cada uno).</li>
+                        <li><strong>Día 15-21:</strong> Incorpora posturas de yoga suaves como el perro boca abajo, el gato-vaca y el triángulo.</li>
+                        <li><strong>Día 22-30:</strong> Mantén las posturas por más tiempo y explora estiramientos más profundos.</li>
+                    </ul>
+                    
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Reto de los 10,000 Pasos Diarios</h3>
+                    <p>Fomenta la actividad diaria caminando 10,000 pasos cada día durante un mes.</p>
+                    <ul>
+                        <li><strong>Semana 1:</strong> Intenta alcanzar los 7,000 pasos diarios.</li>
+                        <li><strong>Semana 2:</strong> Aumenta gradualmente hasta los 8,500 pasos.</li>
+                        <li><strong>Semanas 3-4:</strong> Mantén el objetivo de 10,000 pasos diarios y explora diferentes rutas y formas de aumentar tu actividad.</li>
+                    </ul>
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Reto de Hidratación de 30 Días</h3>
+                    <p>Mejora tu salud bebiendo al menos 2 litros de agua al día durante 30 días.</p>
+                    <ul>
+                        <li><strong>Semana 1:</strong> Lleva un registro de tu consumo de agua e intenta alcanzar 1.5 litros diarios.</li>
+                        <li><strong>Semanas 2-4:</strong> Aumenta tu objetivo a 2 litros diarios y experimenta con diferentes formas de hacer que el agua sea más atractiva (añadiendo frutas, etc.).</li>
+                    </ul>
+                   
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+</body>
+</html>

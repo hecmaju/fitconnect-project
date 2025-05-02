@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Seguimiento de tu Progreso - FitConnect</title>
+    <link rel="shortcut icon" href="imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nutricion.html">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>  
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="progress-section">
+            <h1>Seguimiento de tu Progreso</h1>
+
+            <p>Mantener un registro de tu progreso es fundamental para alcanzar tus objetivos fitness. Te permite visualizar tus avances, mantener la motivación y ajustar tu plan de entrenamiento según sea necesario.</p>
+
+            <div class="progress-tracking">
+                <h2>¿Cómo puedes seguir tu progreso?</h2>
+                <ul>
+                    <li><strong>Mediciones corporales:</strong> Registra periódicamente tu peso, circunferencias (cintura, brazos, piernas, etc.) y porcentaje de grasa corporal.</li>
+                    <li><strong>Rendimiento en los ejercicios:</strong> Anota las repeticiones, series, peso levantado y tiempos en tus entrenamientos.</li>
+                    <li><strong>Fotos de progreso:</strong> Toma fotos cada cierto tiempo para visualizar los cambios en tu físico.</li>
+                    <li><strong>Sensaciones y energía:</strong> Lleva un diario de cómo te sientes durante y después de tus entrenamientos, así como tus niveles de energía.</li>
+                    <li><strong>Uso de aplicaciones y herramientas:</strong> Explora aplicaciones móviles y hojas de cálculo para registrar y analizar tus datos de forma organizada.</li>
+                </ul>
+            </div>
+
+            <div class="benefits-of-tracking">
+                <h2>Beneficios de seguir tu progreso</h2>
+                <ul>
+                    <li><strong>Mantiene la motivación:</strong> Ver tus avances te anima a seguir adelante.</li>
+                    <li><strong>Identifica qué funciona:</strong> Te ayuda a determinar qué ejercicios y estrategias son más efectivas para ti.</li>
+                    <li><strong>Permite ajustes informados:</strong> Puedes modificar tu plan basándote en datos reales, no solo en sensaciones.</li>
+                    <li><strong>Establece metas realistas:</strong> Un seguimiento constante te ayuda a definir objetivos alcanzables.</li>
+                    <li><strong>Celebra tus logros:</strong> Reconocer tus avances, por pequeños que sean, refuerza tu compromiso.</li>
+                </ul>
+            </div>
+
+            <p>En FitConnect, te animamos a que hagas del seguimiento de tu progreso una parte integral de tu rutina fitness. ¡Cada paso cuenta hacia una vida más saludable y activa!</p>
+        </section>
+    </main>
+
+    <div class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+</body>
+</html>

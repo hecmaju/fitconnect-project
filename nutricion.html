@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planes de Nutrición - FitConnect</title>
+    <link rel="shortcut icon" href="/imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nutricion.html" class="active">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <h1 class="hero-title">Planes de Nutrición Saludables</h1>
+            <p class="hero-subtitle">Complementa tu rutina con una alimentación adecuada.</p>
+            <p class="hero-subtitle">Recibe planes de comida personalizados y consulta a nuestros nutricionistas cuando lo necesites.</p>
+        </section>
+
+        <section class="nutrition-plans">
+
+            <div class="card-grid">
+                <article class="card">
+                    <img src="imatges/basico.png" alt="plato de comida saludable">
+                    <h3>Plan básico</h3>
+                    <p>Ideal para principiantes. Incluye un plan de comidas semanal con recetas sencillas y una lista de compras.</p>
+                    <a href="contactos.html" class="button" data-plan="basico">9.90€/mes</a>
+                </article>
+                <article class="card">
+                    <img src="imatges/medicina.png" alt="dieta equilibrada">
+                    <h3>Plan avanzado</h3>
+                    <p>Diseñado para atletas y personas con objetivos específicos. Incluye planes detallados por macronutrientes y consulta mensual con un nutricionista.</p>
+                    <a href="contactos.html" class="button" data-plan="avanzado">19.90€/mes</a>
+                </article>
+                <article class="card">
+                    <img src="imatges/vegan2.png" alt="dieta vegana">
+                    <h3>Plan vegano-vegetariano</h3>
+                    <p>Opciones deliciosas y nutritivas basadas en alimentos naturales. Incluye recetas veganas y vegetarianas consejos para una dieta equilibrada.</p>
+                    <a href="contactos.html" class="button" data-plan="vegano">9.90€/mes</a>
+                </article>
+            </div>
+
+            </section>
+        </section>
+
+    </main>
+    <div class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </div>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Clases y Entrenamientos Individuales - FitConnect</title>
+    <link rel="shortcut icon" href="imatges/barra-con-pesas-azul-2.png" type="image/ico">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect">
+                    <span>FitConnect</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Página principal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nutricion.html">Planes</a></li>
+                    <li><a href="horario.html">Horario</a></li>  
+                    <li class="login-item">
+                        <a href="#" id="login-toggle" class="login-link">Iniciar Sesión</a>
+                        <div class="login-dropdown">
+                            <form id="login-form">
+                                <h2>Iniciar Sesión</h2>
+                                <label for="login-usuario">Usuario:</label>
+                                <input type="text" id="login-usuario" name="login-usuario" required>
+                                <label for="login-contraseña">Contraseña:</label>
+                                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                                <button type="submit">Entrar</button>
+                                <p class="error-message" id="login-error"></p>
+                            </form>
+                            <p class="register-link">¿No tienes cuenta? <a href="contactos.html">Regístrate</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="imatges/socialnetwork/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="imatges/socialnetwork/instagram.png" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><img src="imatges/socialnetwork/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="classes-section">
+            <h1>Clases y Entrenamientos</h1>
+
+            <article class="class-group">
+                <h2>Clases Grupales</h2>
+                <p>Únete a nuestras dinámicas clases grupales dirigidas por instructores expertos. ¡Encuentra la motivación y la energía para alcanzar tus objetivos!</p>
+                <ul>
+                    <li><strong>Zumba:</strong> ¡Baila y ponte en forma al ritmo de la música latina!</li>
+                    <li><strong>Crossfit:</strong> Entrenamientos de alta intensidad para mejorar tu fuerza y resistencia.</li>
+                    <li><strong>Kick-Boxing:</strong> Aprende técnicas de defensa personal mientras quemas calorías.</li>
+                    <li><strong>Pilates:</strong> Fortalece tu core y mejora tu flexibilidad.</li>
+                    <li><strong>Yoga:</strong> Encuentra el equilibrio entre cuerpo y mente.</li>
+                </ul>
+                <a href="horario.html" class="button">Ver Horario de Clases</a>
+            </article>
+
+            <article class="individual-training">
+                <h2>Entrenamientos Individuales</h2>
+                <p>¿Buscas una atención más personalizada? Nuestros entrenadores personales certificados diseñarán un programa específico para tus necesidades y metas.</p>
+                <ul>
+                    <li>Evaluación física completa.</li>
+                    <li>Plan de entrenamiento personalizado.</li>
+                    <li>Seguimiento individualizado.</li>
+                    <li>Asesoramiento nutricional (opcional).</li>
+                </ul>
+                <a href="contactos.html" class="button secondary-button">Solicitar Información</a>
+            </article>
+        </section>
+    </main>
+
+    <aside class="back-to-top">
+        <a href="index.html" class="button secondary-button">Volver a la página principal</a>
+    </aside>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 FitConnect. Todos los derechos reservados.</p>
+            <p>Diseñado por Héctor Martínez Juan.</p>
+        </div>
+    </footer>
+</body>
+</html>
