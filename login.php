@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION['usuario_rol'] = $usuario['rol'];
                     $_SESSION['loggedin'] = true;
                     mysqli_close($conexion);
-                    header("Location: index.php");
+                    header("Location: rankings.php");
                     exit();
                 } else {
                     $_SESSION['login_error'] = "Contraseña incorrecta.";
