@@ -277,7 +277,8 @@
             </table>
         </section>
         <div class="back-to-top">
-            <a href="index.php" class="button secondary-button">Volver al principio</a>
+            <a href="rankings.php" class="button secondary-button">Volver a rankings</a>  
+            <a href="index.php" class="button secondary-button">Volver a pagina principal</a>
         </div>
     </main>
 

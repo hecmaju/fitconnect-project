@@ -12,12 +12,12 @@
     <header class="main-header">
         <div class="container header-content" id="principio">
             <div class="logo">
-                <a href="index.html"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
+                <a href="index.php"><img src="imatges/barra-con-pesas-azul-2.png" alt="Logo de FitConnect"> <span>FitConnect</span></a>
             </div>
             
             <nav class="main-nav">
     <ul>
-        <li><a href="index.html" class="active">Página principal</a></li>
+        <li><a href="index.php" class="active">Página principal</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="nutricion.html">Planes</a></li>
         <li><a href="horario.html">Horario</a></li>
