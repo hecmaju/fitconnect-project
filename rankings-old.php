@@ -52,7 +52,24 @@
                     <p>Sigue tu progreso y compite en diferentes ejercicios de fitness.</p>
                     <a href="fitness_ranking.php" class="button">Ver Ranking</a>
                 </article>
-                
+                <article class="card">
+                    <img src="imatges/crossfit2.png" alt="Imagen de Crossfit">
+                    <h3>Crossfit</h3>
+                    <p>Compara tus tiempos y resultados en los WODs más desafiantes.</p>
+                    <a href="rankings.php?actividad=crossfit" class="button">Ver Ranking</a>
+                </article>
+                <article class="card">
+                    <img src="imatges/Yoga-relajacion.jpg" alt="Imagen de Yoga">
+                    <h3>Yoga</h3>
+                    <p>Registra tus logros en diferentes asanas y series de yoga.</p>
+                    <a href="rankings.php?actividad=yoga" class="button">Ver Ranking</a>
+                </article>
+                <article class="card">
+                    <img src="imatges/kick-boxing2.png" alt="Imagen de Kick-Boxing">
+                    <h3>Kick-Boxing</h3>
+                    <p>Mide tu potencia y resistencia en diferentes técnicas de combate.</p>
+                    <a href="rankings.php?actividad=kick-boxing" class="button">Ver Ranking</a>
+                </article>
             </div>
         </section>
     </main>
