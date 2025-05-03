@@ -24,7 +24,7 @@
                     require_once 'funciones.php';
                     session_start();
                     if (isset($_SESSION['nombre_usuario'])) {
-                        echo '<li class="logged-in-user">' . 'Bienvenido ' . '<br>' . htmlspecialchars($_SESSION['nombre_usuario']) . '</li>';
+                        echo '<li class="logged-in-user">' . 'Bienvenido/a ' . '<br>' . htmlspecialchars($_SESSION['nombre_usuario']) . '</li>';
                         echo '<li class="logout-item"><a href="logout.php" class="logout-button">Cerrar Sesión</a></li>';
                         // Hemos eliminado el enlace duplicado a la página de ranking específica
                     } else {
